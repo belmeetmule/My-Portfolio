@@ -160,8 +160,6 @@ header {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 4;
   background-color: #e5e5e5;
   padding-top: 68px;
 }
