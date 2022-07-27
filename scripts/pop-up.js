@@ -225,7 +225,9 @@ const render = `
     </li>
     <li class="bg">2015</li>
 </ul>
-<img src=${project.featured_image} alt="featured project image" class="modal-card-img">
+<div class="featured-img-cont">
+  <img src=${project.featured_image} alt="featured project image" class="modal-card-img">
+</div>
 <div class="modal-project-description">
     <p class="modal-description">${detailText}</p>
     <div class="modal-links">
