@@ -466,18 +466,6 @@ header {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  margin: 50px 16px;
-  padding: 18px 16px;
-  border: 1px solid #888;
-  width: 90%;
-  border-radius: 16px;
-}
-
-
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  margin: 50px 16px;
   padding: 18px 16px;
   border: 1px solid #888;
   width: 90%;
@@ -530,9 +518,10 @@ header {
   font-size: 13px;
 }
 
-.live-links .btn-enabled img{
+.live-links .btn-enabled img {
   margin: auto 7px;
 }
+
 .btn-enabled .fa {
   margin-left: 5px;
 }
@@ -722,28 +711,29 @@ header {
     display: none;
   }
 
-  /* modal desktop*/
+  /* modal desktop */
   .modal {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 35px 142px 0px 142px;
+    padding: 35px 142px 0 142px;
   }
 
-  .modal-content{
+  .modal-content {
     margin: auto;
   }
-  .featured-img-cont{
+
+  .featured-img-cont {
     text-align: center;
     margin-top: 6px;
     margin-bottom: 9px;
   }
 
   .modal-card-img {
-    width: 45%;
+    width: 48%;
     margin: auto;
     display: block;
-    background: #C1C7D0;
+    background: #c1c7d0;
   }
 
   .modal-project-description {
@@ -755,8 +745,8 @@ header {
     flex-basis: 450px;
     flex-grow: 5;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .modal-links {

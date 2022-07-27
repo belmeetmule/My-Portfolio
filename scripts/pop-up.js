@@ -94,7 +94,7 @@ function makeUL(array) {
   // Create the list element:
   const list = document.createElement('ul');
 
-  for (let i = 0; i < array.length; i= i + 1 ){
+  for (let i = 0; i < array.length; i += 1) {
     // Create the list item:
     const item = document.createElement('li');
 
@@ -119,7 +119,7 @@ function makeL(array) {
   // Create the list element:
   const list = document.createElement('ul');
 
-  for (let i = 0; i < array.length; i=i+1) {
+  for (let i = 0; i < array.length; i += 1) {
     // Create the list item:
     const item = document.createElement('li');
 
@@ -184,7 +184,7 @@ function addWorkSection(pro) {
 }
 
 function addPortfolio() {
-  for (let i = 0; i < projects.length; i= i + 1) {
+  for (let i = 0; i < projects.length; i += 1) {
     addWorkSection(projects[i]);
   }
 }
@@ -268,6 +268,6 @@ function addLi(proId) {
 }
 
 // iterate over and add listner to all buttons
-for (let i = 0; i < projects.length; i= i + 1) {
+for (let i = 0; i < projects.length; i += 1) {
   addLi(projects[i].id);
 }
