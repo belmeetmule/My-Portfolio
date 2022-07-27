@@ -474,6 +474,117 @@ header {
 }
 
 
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  margin: 50px 16px;
+  padding: 18px 16px;
+  border: 1px solid #888;
+  width: 90%;
+  border-radius: 16px;
+}
+
+.modal-card-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.btn-enabled {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.live-links > .btn-enabled {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.live-links .btn-enabled img{
+  margin: auto 7px;
+}
+.btn-enabled .fa {
+  margin-left: 5px;
+}
+
+.live-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 6px;
+  padding-left: 0;
+}
+
+.modal-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.modal-project-description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.modal-content > .icons > .canopy {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.modal-content > .icons > .bg {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.modal-content > .icons > .counter {
+  width: 8px;
+  height: 8px;
+  margin: -5px -5px;
+}
+
+.modal-links {
+  flex: 1;
+  margin-left: 12px;
+}
+
 /* Desktop version min-width of 768px) */
 @media only screen and (min-width: 768px) {
   .header {
