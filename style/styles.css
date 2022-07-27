@@ -722,16 +722,28 @@ header {
     display: none;
   }
 
-  
-  .modal-card-img {
-    width: 80%;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
+  /* modal desktop*/
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 142px 0px 142px;
   }
 
-  .modal {
-    padding: 47px 210px;
+  .modal-content{
+    margin: auto;
+  }
+  .featured-img-cont{
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 9px;
+  }
+
+  .modal-card-img {
+    width: 45%;
+    margin: auto;
+    display: block;
+    background: #C1C7D0;
   }
 
   .modal-project-description {
@@ -751,9 +763,5 @@ header {
     flex-basis: 236px;
     flex-grow: 5;
     flex-grow: 0;
-  }
-
-  .modal-content {
-    padding: 24px;
   }
 }
