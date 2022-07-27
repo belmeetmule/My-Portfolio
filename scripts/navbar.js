@@ -1,5 +1,4 @@
 const menu = document.querySelector('.menu');
-const menuItems = document.querySelectorAll('.menuItem');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
 const navHeader = document.querySelector('header');
