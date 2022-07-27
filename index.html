@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset = "UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mulugeta-Portfolio</title>
     <link rel="stylesheet" href="style/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <script src="./scripts/navbar.js" defer></script>
+    <script src="./scripts/pop-up.js" defer></script>
+    <script src="./scripts/validateForm.js" defer></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
 </head>
 <body>
     <!-- define container that holds all the items of the page-->
@@ -51,141 +52,13 @@
 
         <!-- Work section-->
         <section id="portfolio" class="grid-container">
-
-            <!--Card one-->
-            <div class="grid-item">
-                <div>
-                    <img class="profile-image-mobile" src="images/Portfolio-1.png" alt="Portfolio-1">
-                    <img class="profile-image-desktop" src="images/card1-pic-desktop.png" alt="Portfolio-1">
-                </div>
-                <div class="card-item">
-                     <h2 class="card-title">Tonic</h2>
-                    <ul class="icons">
-                        <li class="client">CANOPY</li>
-                        <li><span class="dot"></span></li>
-                        <li class="role-year">Back End Dev</li>
-                        <li> <span class="dot"></span></li>
-                        <li class="role-year">2015</li>
-                    </ul>
-                    <p class="primary-text">
-                        A daily selection of privately
-                        personalized reads; no accounts or
-                        sign-ups required.
-                    </p>
-                    <ul class="icons">
-                        <li class="languages">html</li>
-                        <li class="languages">css</li>
-                        <li class="languages">javascript
-                        </li>
-                    </ul>
-                    <button type="button" class="see-more-button">
-                        See Project
-                    </button>
-                </div>
-            </div>
-
-            <!--Card two-->
-            <div class="grid-item" id="card-2">
-                <div>
-                    <img class="profile-image-mobile" src="images/Portfolio-2.png" alt="Portfolio-2 image">
-                    <img class="profile-image-desktop" src="images/card2-pic-desktop.png" alt="Portfolio-1">
-                </div>
-                <div class="card-item">
-                    <h2 class="card-title">Multi-post stories</h2>
-                        <ul class="icons">
-                            <li class="client">CANOPY</li>
-                            <li><span class="dot"></span></li>
-                            <li class="role-year">Back End Dev</li>
-                            <li> <span class="dot"></span></li>
-                            <li class="role-year">2015</li>
-                        </ul>
-                        <p class="primary-text">
-                            A daily selection of privately
-                            personalized reads; no accounts or
-                            sign-ups required.
-                        </p>
-                        <ul class="icons">
-                            <li class="languages">html</li>
-                            <li class="languages">css</li>
-                            <li class="languages">javascript
-                            </li>
-                        </ul>
-                        <button type="button" class="see-more-button">
-                            See Project
-                        </button>
-                </div>
-            </div>
-
-             <!--Card three-->
-            <div class="grid-item">
-                <div>
-                    <img class="profile-image-mobile" src="images/Portfolio-3.png" alt="Portfolio-3 image">
-                    <img class="profile-image-desktop" src="images/card3-pic-desktop.png" alt="Portfolio-1">
-                </div>
-                <div class="card-item">
-                    <h2 class="card-title">Tonic</h2>
-                        <ul class="icons">
-                            <li class="client">CANOPY</li>
-                            <li><span class="dot"></span></li>
-                            <li class="role-year">Back End Dev</li>
-                            <li> <span class="dot"></span></li>
-                            <li class="role-year">2015</li>
-                        </ul>
-                        <p class="primary-text">
-                            A daily selection of privately
-                            personalized reads; no accounts or
-                            sign-ups required.
-                        </p>
-                        <ul class="icons">
-                            <li class="languages">html</li>
-                            <li class="languages">css</li>
-                            <li class="languages">javascript
-                            </li>
-                        </ul>
-                        <button type="button" class="see-more-button">
-                            See Project
-                        </button>
-                </div>
-            </div>
-
-             <!--Card four-->
-             <div class="grid-item" id="card-4">
-                <div>
-                    <img class="profile-image-mobile" src="images/Portfolio-4.png" alt="Portfolio-4 image">
-                    <img class="profile-image-desktop" src="images/card4-pic-desktop.png" alt="Portfolio-1">
-                </div>
-                <div class="card-item">
-                    <h2 class="card-title">Multi-post stories</h2>
-                        <ul class="icons">
-                            <li class="client">CANOPY</li>
-                            <li><span class="dot"></span></li>
-                            <li class="role-year">Back End Dev</li>
-                            <li> <span class="dot"></span></li>
-                            <li class="role-year">2015</li>
-                        </ul>
-                        <p class="primary-text">
-                            A daily selection of privately
-                            personalized reads; no accounts or
-                            sign-ups required.
-                        </p>
-                        <ul class="icons">
-                            <li class="languages">html</li>
-                            <li class="languages">css</li>
-                            <li class="languages">javascript
-                            </li>
-                        </ul>
-                        <button type="button" class="see-more-button">
-                            See Project
-                        </button>
-                </div>
-             </div>    
+            
         </section>     
-                   
-   
+        <div id="myModal" class="modal"></div>
         <!-- About me-->
         <div id="about" class="about-my-self">
-            <div class="card-item">
-                <h2 class="card-title test">About Myself</h2>
+            <div class="project-description">
+                <h2 class="project-title test">About Myself</h2>
                    
                 <p class="primary-text">
                     Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
@@ -255,13 +128,19 @@
                 <div class="form-wrapper">
                         <h2>Contact me</h2>
                         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-                    
+                    <div>
+                        
                     <form  class="form-elements" action="https://formspree.io/f/xknylrod" method="POST">
                         <input type="text" id="name" name="name" maxlength="30" placeholder="Your full name" required>
-                        <input type="email" name="Email" id="email" placeholder="email@smtn.com" required>    
+                        <input type="email" name="Email" id="email" placeholder="email@smtn.com" required>  <small class="error-message" id="error"> sdf;h;lksadfh;lhsdf</small>   
+                        
+                           
+                       
                         <textarea id="message" name="message" rows="30" cols="30" placeholder="Write your message here" maxlength="500" required></textarea>
                         <button type="submit" id="get-in-touch" class="see-more-button">Get In Touch</button>
                     </form>
+
+                   
                     <!-- The black horizontal bar-->
                     <div class="home-indicator">   
 
@@ -269,11 +148,7 @@
                    
                 </div>
             </div>
+            </div>
          </section>
-
-         <script>
-            const meee = document.querySelector("#idd")
-            console.log(meee);
-        </script>
 </body>
 </html>
