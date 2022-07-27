@@ -57,6 +57,7 @@ header {
   list-style: none;
   padding-top: 2rem;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   mix-blend-mode: multiply;
   opacity: 1;
 }
@@ -164,14 +165,14 @@ header {
   padding-top: 68px;
 }
 
-.grid-item {
+.project {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 16px;
   border-radius: 15px;
   margin-top: 68px;
 }
 
-.card-title {
+.project-title {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -179,11 +180,11 @@ header {
   color: #172b4d;
 }
 
-.profile-image-mobile {
+.featured_image-mobile {
   display: block !important;
 }
 
-.profile-image-desktop {
+.featured_image-desktop {
   display: none !important;
 }
 
@@ -197,7 +198,8 @@ header {
   padding-left: 0;
 }
 
-.client {
+.client,
+.role-year {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -214,10 +216,6 @@ header {
 }
 
 .role-year {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
   color: #7a869a;
 }
 
@@ -324,7 +322,7 @@ header {
   color: #172b4d;
 }
 
-.grid-item-alt {
+.project-alt {
   background-color: white;
   padding: 88px 0 68px 0;
   border-radius: 15px;
@@ -451,6 +449,8 @@ header {
   margin-top: 6px;
 }
 
+
+
 /* Desktop version min-width of 768px) */
 @media only screen and (min-width: 768px) {
   .header {
@@ -505,23 +505,10 @@ header {
     padding-right: 142px;
   }
 
-  .grid-item {
+  .project {
     display: flex;
     flex-direction: row;
     gap: 46px;
-  }
-
-  .profile-image-mobile {
-    display: none !important;
-  }
-
-  .profile-image-desktop {
-    display: block !important;
-    width: 100%;
-  }
-
-  .profile-image-desktop:hover {
-    transform: scale(1.1);
   }
 
   .see-more-button:hover {
@@ -541,14 +528,10 @@ header {
     padding-bottom: 0;
   }
 
-  .about-my-self .card-item {
+  .about-my-self .project-description {
     width: 100%;
     height: 392px;
     margin: 142px 37px 142px 142px;
-  }
-
-  img {
-    width: 100%;
   }
 
   #skill-language {
@@ -562,6 +545,8 @@ header {
   .languages-title {
     margin-top: 0;
     padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .languages-vertical {
@@ -575,8 +560,8 @@ header {
     flex-direction: column;
   }
 
-  #card-2,
-  #card-4 {
+  #project-2,
+  #project-4 {
     flex-direction: row-reverse;
   }
 
