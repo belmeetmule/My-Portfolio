@@ -194,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }, false);
 
 // pup up
+const additionalLanguages=['Github', 'Ruby', 'Bootsrap'];
 const projectButtons = [];
 const buttons = document.querySelectorAll('button');
 const modal = document.getElementById('myModal');
@@ -231,9 +232,9 @@ const displayModal = (id) => {
     <div class="modal-links">
         <ul class="icons">
           ${li}
-          <li class="languages">Github </li>
-          <li class="languages">Ruby </li>
-          <li class="languages"> Bootsrap</li>
+          <li class="languages"> ${additionalLanguages[0]}</li>
+          <li class="languages"> ${additionalLanguages[1]}</li>
+          <li class="languages"> ${additionalLanguages[2]}</li>
         </ul>
         <hr>
         <div class="live-links">
