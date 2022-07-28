@@ -128,18 +128,18 @@
                 <div class="form-wrapper">
                         <h2>Contact me</h2>
                         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-                    <div>
-                        
+                <div>
+                    
                     <form  class="form-elements" action="https://formspree.io/f/xknylrod" method="POST">
                         <input type="text" id="name" name="name" maxlength="30" placeholder="Your full name" required>
                         <input type="email" name="Email" id="email" placeholder="email@smtn.com" required>
+                        <div class="error-message">
+                            <small class="error-message" id="error"> </small>
+                        </div>  
                         <textarea id="message" name="message" rows="30" cols="30" placeholder="Write your message here" maxlength="500" required></textarea>
                         <button type="submit" id="get-in-touch" class="see-more-button">Get In Touch</button>
                     </form>
-                    <div class="error-message" >
-                        <small id="error"> </small>
-                    </div>
-
+                   
 
                     <!-- The black horizontal bar-->
                     <div class="home-indicator">   
@@ -147,7 +147,6 @@
                     </div>
                    
                 </div>
-            </div>
             </div>
          </section>
 </body>
