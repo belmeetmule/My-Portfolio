@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }, false);
 
 // pup up
-const additionalLanguages=['Github', 'Ruby', 'Bootsrap'];
+const additionalLanguages = ['Github', 'Ruby', 'Bootsrap'];
 const projectButtons = [];
 const buttons = document.querySelectorAll('button');
 const modal = document.getElementById('myModal');
