@@ -484,11 +484,8 @@ header {
 }
 
 .error-message {
-  background-color: red;
-  padding: 0.2em;
   margin: 0 auto;
-  color: white;
-  border-radius: 5px;
+  color: red;
 }
 
 .modal {
