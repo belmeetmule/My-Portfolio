@@ -459,8 +459,7 @@ header {
   height: 100%;
   padding: 60px 16px 50px 16px;
   overflow: auto;
-  background: #83a0cc;
-  background-color: rgba(0, 0, 255, 0.4);
+  background-color: rgba(0, 0, 255, 0.3);
 }
 
 .modal-content {
@@ -719,7 +718,7 @@ header {
 
   /* modal desktop */
   .modal {
-    padding: 35px 142px 0 142px;
+    padding: 77px 142px 77px 142px;
   }
 
   .modal-content {
@@ -733,10 +732,15 @@ header {
   }
 
   .modal-card-img {
-    width: 48%;
+    width: 68%;
     margin: auto;
     display: block;
     background: #c1c7d0;
+  }
+
+  hr{
+    display: block;
+    margin-top: 10px;
   }
 
   .modal-project-description {
