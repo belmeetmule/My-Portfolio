@@ -47,7 +47,6 @@ header {
 .menu {
   position: fixed;
   transform: translateY(-100%);
-  transition: transform 0.3s;
   top: 0;
   left: 0;
   right: 0;
@@ -458,9 +457,10 @@ header {
   right: 0;
   width: 100%;
   height: 100%;
+  padding: 60px 16px 50px 16px;
   overflow: auto;
-  background: #c1c7d0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: #83a0cc;
+  background-color: rgba(0, 0, 255, 0.4);
 }
 
 .modal-content {
@@ -478,6 +478,12 @@ header {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+}
+
+.featured-img-cont {
+  text-align: center;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .btn-enabled {
@@ -612,7 +618,7 @@ header {
     padding-left: 260px;
     padding-right: 260px;
     padding-top: 100px;
-    margin-top: 73px;
+    padding-top: 73px;
   }
 
   .logo {
@@ -713,9 +719,6 @@ header {
 
   /* modal desktop */
   .modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 35px 142px 0 142px;
   }
 
