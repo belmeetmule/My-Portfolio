@@ -19,4 +19,4 @@ function toggleMenu() {
 closeIcon.addEventListener('click', toggleMenu);
 menuIcon.addEventListener('click', toggleMenu);
 
-document.querySelectorAll('.menuItem').forEach((i) => i.addEventListener('click', toggleMenu());
+document.querySelectorAll('.menuItem').forEach((i) => i.addEventListener('click', toggleMenu));
