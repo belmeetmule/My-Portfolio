@@ -450,7 +450,7 @@ header {
 
 /* Form validation */
 
-/* Form validation 
+/* Form validation
 #error {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -484,11 +484,8 @@ header {
 }
 
 .error-message {
-  background-color: red;
-  padding: 0.2em;
   margin: 0 auto;
-  color: white;
-  border-radius: 5px;
+  color: red;
 }
 
 .modal {
@@ -736,18 +733,18 @@ header {
     flex-direction: row-reverse;
   }
 
-  .form-containter{
+  .form-containter {
     background: #396df2 url("../images/contact-formbg-desktop.svg") no-repeat;
-    max-width: 1290.66px;
+    max-width: 100%;
     height: 846px;
     background-position: 75.34px 79.09px;
   }
+
   .form-wrapper {
-   max-width: 801px;
-   margin: 0 auto;
+    margin: 0 auto;
   }
 
-  .form-elements-alt{
+  .form-elements-alt {
     padding-left: 410px;
     padding-right: 409px;
     padding-top: 62.91px;
@@ -755,6 +752,15 @@ header {
   }
   .form-wrapper p {
     margin-bottom: 12px;
+    width: 65%;
+    margin: auto auto;
+    text-align: center;
+  }
+
+  input,
+  textarea {
+    margin: auto auto;
+    max-width: 447px;
   }
 
   input,
