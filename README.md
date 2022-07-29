@@ -15,7 +15,7 @@ This project is a responsive mobile first prortfolio website. This website has a
 
 ## Live Demo
 
-[Live Demo Link](https://belmeetmule.github.io/Portfolio/)
+[Live Demo Link](https://belmeetmule.github.io/My-Portfolio/)
 
 ## Built With
 
