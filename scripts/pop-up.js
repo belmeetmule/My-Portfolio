@@ -2,14 +2,14 @@
 const projects = [
   {
     id: 'project-1',
-    name: 'Tonic',
-    featuredImage: 'images/Portfolio-1.png',
+    name: 'Great Ethiopian Run',
+    featuredImage: './project-images/GER3.jpg',
     sub: [
-      'CANOPY',
+      'Microverse',
       '',
-      'Back End Dev',
+      'Front End Dev',
       '',
-      '2015',
+      '2022',
     ],
     langs: [
       'html',
@@ -19,18 +19,18 @@ const projects = [
     live_link: '',
     source_link: '',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A website project to promote the great ethiopian run that is going to be conducted on November 2022. The website has a nice look and feel on both small devices like phone and tablets and devices with large screens !!',
   },
   {
     id: 'project-2',
-    name: 'Multi-Post Stories',
-    featuredImage: 'images/Portfolio-2.png',
+    name: 'Awesome Books',
+    featuredImage: './project-images/AwesomeBooks.jpg',
     sub: [
-      'CANOPY',
+      'Microverse',
       '',
-      'Back End Dev',
+      'Front End Dev',
       '',
-      '2015',
+      '2022',
     ],
     langs: [
       'html',
@@ -40,28 +40,28 @@ const projects = [
     live_link: '',
     source_link: '',
     description:
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    'Awesome books project is built using java script, html and css. The app allows user to create and add new book detail into book list, display the list of added book and shows a simple about us information all generated dynamically using JS.',
   },
   {
     id: 'project-3',
-    name: 'Facebook 360',
-    featuredImage: 'images/Portfolio-3.png',
+    name: 'To-Do-App',
+    featuredImage: 'project-images/todo.jpg',
     sub: [
-      'CANOPY',
+      'Microverse',
       '',
-      'Back End Dev',
+      'Front End Dev',
       '',
-      '2015',
+      '2022',
     ],
     langs: [
       'html',
       'css',
       'javascript',
     ],
-    live_link: '',
-    source_link: '',
+    live_link: 'https://belmeetmule.github.io/to-do-list/dist/',
+    source_link: 'https://github.com/belmeetmule/to-do-list',
     description:
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    'This is a to-do-list app project. The application allows user to add, edit, remove tasks in the to do list !! This app is built using java script, html and css.',
   },
   {
     id: 'project-4',
@@ -82,7 +82,7 @@ const projects = [
     ],
 
     live_link: '',
-    source_link: '',
+    source_link: 'https://github.com/belmeetmule/Great-Ethiopian-Run',
     description:
     'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   },
@@ -239,12 +239,14 @@ const displayModal = (id) => {
         <hr>
         <div class="live-links">
             <button class="btn-enabled" id='live-link' type="button">
-                See live
-                <img src="./images/live-icon-new.png">
+                <a href = ${project.live_link}> See live
+                <img src="./images/live-icon-new.png"> </a>
             </button>
             <button class="btn-enabled" id='btn-source-link' type="button">
+            <a href = ${project.source_link} >
                 See source
-                <img src="./images/source.png">
+                <img src="./images/source.png"> 
+              </a>
                 </div>
             </button>
         </div>
