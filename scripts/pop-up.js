@@ -3,7 +3,7 @@ const projects = [
   {
     id: 'project-1',
     name: 'Great Ethiopian Run',
-    featuredImage: './project-images/GER3.jpg',
+    featuredImage: './project-images/rsz_screen-shoot-desktop.jpg',
     sub: [
       'Microverse',
       '',
@@ -16,15 +16,15 @@ const projects = [
       'css',
       'javascript',
     ],
-    live_link: '',
-    source_link: '',
+    live_link: 'https://belmeetmule.github.io/Great-Ethiopian-Run/',
+    source_link: 'https://github.com/belmeetmule/Great-Ethiopian-Run',
     description:
       'A website project to promote the great ethiopian run that is going to be conducted on November 2022. The website has a nice look and feel on both small devices like phone and tablets and devices with large screens !!',
   },
   {
     id: 'project-2',
     name: 'Awesome Books',
-    featuredImage: './project-images/AwesomeBooks.jpg',
+    featuredImage: './project-images/rsz_awesomebook.png',
     sub: [
       'Microverse',
       '',
@@ -37,15 +37,15 @@ const projects = [
       'css',
       'javascript',
     ],
-    live_link: '',
-    source_link: '',
+    live_link: 'https://belmeetmule.github.io/awesome-book-es6/',
+    source_link: 'https://github.com/belmeetmule/awesome-book-es6',
     description:
     'Awesome books project is built using java script, html and css. The app allows user to create and add new book detail into book list, display the list of added book and shows a simple about us information all generated dynamically using JS.',
   },
   {
     id: 'project-3',
     name: 'To-Do-App',
-    featuredImage: 'project-images/todo.jpg',
+    featuredImage: 'project-images/rsz_todo.png',
     sub: [
       'Microverse',
       '',
@@ -65,14 +65,14 @@ const projects = [
   },
   {
     id: 'project-4',
-    name: 'Uber Navigation',
-    featuredImage: 'images/Portfolio-4.png',
+    name: 'Portfolio website',
+    featuredImage: 'project-images/rsz_portfolio2.jpg',
     sub: [
-      'CANOPY',
+      'Microverse',
       '',
-      'Back End Dev',
+      'Front End Dev',
       '',
-      '2015',
+      '2022',
     ],
 
     langs: [
@@ -81,10 +81,10 @@ const projects = [
       'javascript',
     ],
 
-    live_link: '',
-    source_link: 'https://github.com/belmeetmule/Great-Ethiopian-Run',
+    live_link: 'https://belmeetmule.github.io/My-Portfolio/',
+    source_link: 'https://belmeetmule.github.io/My-Portfolio/',
     description:
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    'This project is a responsive mobile first Portfolio website. This website can be used by professionals like software developers to showcase and promote their work. Hence, one can use it to present his/her works, contact address, skill set and contact me form. It is built using java script and bootstrap.',
   },
 ];
 
@@ -105,6 +105,7 @@ function makeUL(array) {
     } else {
       const bullets = document.createElement('span');
       bullets.classList.add('dot');
+      bullets.innerHTML = "&#9679;"
       item.appendChild(bullets);
     }
     // Add it to the list:
@@ -145,6 +146,7 @@ function addWorkSection(pro) {
 
   /* image div */
   const featuredImageDiv = document.createElement('div');
+  featuredImageDiv.classList.add('featured-images-container');
   const featuredImage = document.createElement('img');
   featuredImage.src = pro.featuredImage;
   featuredImage.alt = `${pro.id} picture`;
@@ -154,6 +156,7 @@ function addWorkSection(pro) {
 
   /* project description (details) */
   const projectDetailDiv = document.createElement('div');
+  projectDetailDiv.classList.add('project-detail-div');
   const name = document.createElement('h2');
   name.innerHTML = pro.name;
   name.classList.add('project-title');
@@ -216,19 +219,20 @@ const displayModal = (id) => {
 <span class="close">&times;</span>
 <h2 class="modal-card-title">${project.name}</h2>
 <ul class="icons">
-    <li class="canopy">CANOPY</li>
-    <li class="counter"><span class='dot'> <span>
+    <li class="canopy">${project.sub[0]}</li>
+    <li class="counter"><span class='dot'> &#9679; <span>
     </li>
-    <li class="bg">Back End Dev</li>
-    <li class="counter"><span class='dot'> <span>
+    <li class="bg">${project.sub[2]}</li>
+    <li class="counter">
+      <span class='dot'> &#9679; <span>
     </li>
-    <li class="bg">2015</li>
+    <li class="bg">${project.sub[4]}</li>
 </ul>
 <div class="featured-img-cont">
   <img src=${project.featuredImage} alt="featured project image" class="modal-card-img">
 </div>
 <div class="modal-project-description">
-    <p class="modal-description">${detailText}</p>
+    <p class="modal-description">${project.description}</p>
     <div class="modal-links">
         <ul class="icons">
           ${li}
@@ -239,11 +243,11 @@ const displayModal = (id) => {
         <hr>
         <div class="live-links">
             <button class="btn-enabled" id='live-link' type="button">
-                <a href = ${project.live_link}> See live
+                <a href = "${project.live_link}" target = "_blank"> See live
                 <img src="./images/live-icon-new.png"> </a>
             </button>
-            <button class="btn-enabled" id='btn-source-link' type="button">
-            <a href = ${project.source_link} >
+            <button class="btn-enabled source-links" id='btn-source-link' type="button">
+            <a href = "${project.source_link}" target = "_blank">
                 See source
                 <img src="./images/source.png"> 
               </a>
