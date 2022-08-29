@@ -178,11 +178,13 @@ header {
   line-height: 44px;
   color: #172b4d;
 }
-.featuredImage-mobile{
+
+.featuredImage-mobile {
   width: 100%;
   height: auto;
   border: 2px solid #bbb;
 }
+
 .featured_image-mobile {
   display: block !important;
 }
@@ -519,14 +521,15 @@ header {
   color: #172b4d;
 }
 
-.featured-images-container{
+.featured-images-container {
   width: fit-content;
   flex: 1;
 }
 
-.project-detail-div{
+.project-detail-div {
   flex: 1;
 }
+
 .featured-img-cont {
   text-align: center;
   margin-top: 9px;
@@ -626,12 +629,15 @@ header {
   flex: 1;
   margin-left: 12px;
 }
-img.modal-card-img{
-max-width: -webkit-fill-available;
-border: 2px solid #bbb;
+
+img.modal-card-img {
+  /* stylelint-disable-next-line csstree/validator */
+  max-width: -webkit-fill-available;
+  max-width: fill-available;
+  border: 2px solid #bbb;
 }
 
-.live-links button a{
+.live-links button a {
   text-decoration: none;
   cursor: pointer;
 }
