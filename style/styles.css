@@ -161,14 +161,14 @@ header {
 .grid-container {
   display: grid;
   background-color: #e5e5e5;
-  padding-top: 68px;
+  padding-top: 38px;
 }
 
 .project {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 16px;
   border-radius: 15px;
-  margin-top: 68px;
+  margin-top: 38px;
 }
 
 .project-title {
@@ -178,7 +178,11 @@ header {
   line-height: 44px;
   color: #172b4d;
 }
-
+.featuredImage-mobile{
+  width: 100%;
+  height: auto;
+  border: 2px solid #bbb;
+}
 .featured_image-mobile {
   display: block !important;
 }
@@ -207,11 +211,7 @@ header {
 }
 
 .dot {
-  height: 8px;
-  width: 8px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
+  color: #bbb;
 }
 
 .role-year {
@@ -519,6 +519,14 @@ header {
   color: #172b4d;
 }
 
+.featured-images-container{
+  width: fit-content;
+  flex: 1;
+}
+
+.project-detail-div{
+  flex: 1;
+}
 .featured-img-cont {
   text-align: center;
   margin-top: 9px;
@@ -618,6 +626,15 @@ header {
   flex: 1;
   margin-left: 12px;
 }
+img.modal-card-img{
+max-width: -webkit-fill-available;
+border: 2px solid #bbb;
+}
+
+.live-links button a{
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /* Desktop version min-width of 768px) */
 @media only screen and (min-width: 768px) {
@@ -676,7 +693,7 @@ header {
   .project {
     display: flex;
     flex-direction: row;
-    gap: 46px;
+    gap: 26px;
   }
 
   .see-more-button:hover {
@@ -784,13 +801,17 @@ header {
     text-align: center;
     margin-top: 6px;
     margin-bottom: 9px;
+    border-radius: 10px;
   }
 
   .modal-card-img {
-    width: 68%;
+    max-width: 100%;
+    height: auto;
     margin: auto;
     display: block;
     background: #c1c7d0;
+    border: 3px solid #bbb;
+    border-radius: 10px;
   }
 
   hr {
