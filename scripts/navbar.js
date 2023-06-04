@@ -4,16 +4,18 @@ const menuIcon = document.querySelector('.menuIcon');
 const navHeader = document.querySelector('header');
 
 function toggleMenu() {
-  if (menu.classList.contains('showMenu')) {
-    menu.classList.remove('showMenu');
-    closeIcon.style.display = 'none';
-    menuIcon.style.display = 'block';
-    navHeader.style.position = 'fixed';
-  } else {
-    menu.classList.add('showMenu');
-    closeIcon.style.display = 'block';
-    menuIcon.style.display = 'none';
-    navHeader.style.position = 'relative';
+  if(window.matchMedia("(max-width: 768px)").matches){
+    if (menu.classList.contains('showMenu') ) {
+      menu.classList.remove('showMenu');
+      closeIcon.style.display = 'none';
+      menuIcon.style.display = 'block';
+      navHeader.style.position = 'fixed';
+    } else {
+      menu.classList.add('showMenu');
+      closeIcon.style.display = 'block';
+      menuIcon.style.display = 'none';
+      navHeader.style.position = 'relative';
+    }
   }
 }
 closeIcon.addEventListener('click', toggleMenu);
