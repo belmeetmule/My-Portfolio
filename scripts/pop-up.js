@@ -3,7 +3,7 @@ const projects = [
   {
     id: 'project-1',
     name: 'Homely',
-    featuredImage: '../project-images/homely.png',
+    featuredImage: '../project-images/homely-mockup.jpg',
     sub: [
       'Microverse',
       '',
@@ -24,7 +24,7 @@ const projects = [
   {
     id: 'project-2',
     name: 'Great Ethiopian Run',
-    featuredImage: './project-images/rsz_screen-shoot-desktop.jpg',
+    featuredImage: './project-images/rsz_screen-shoot-desktop.png',
     sub: [
       'Microverse',
       '',
@@ -44,24 +44,24 @@ const projects = [
   },
   {
     id: 'project-3',
-    name: 'Awesome Books',
-    featuredImage: './project-images/rsz_awesomebook.png',
+    name: 'My-Expenses',
+    featuredImage: './project-images/my-expenses2.png',
     sub: [
       'Microverse',
       '',
-      'Front End Dev',
+      'Full-stack Dev',
       '',
-      '2022',
+      '2023',
     ],
     langs: [
-      'html',
+      'Rails',
       'css',
-      'javascript',
+      'PostgreSQL',
     ],
-    live_link: 'https://belmeetmule.github.io/awesome-book-es6/',
-    source_link: 'https://github.com/belmeetmule/awesome-book-es6',
+    live_link: 'https://my-expenses-3hoz.onrender.com/',
+    source_link: 'https://github.com/belmeetmule/My-Exp/tree/development',
     description:
-    'Awesome books project is built using java script, html and css. The app allows user to create and add new book detail into book list, display the list of added book and shows a simple about us information all generated dynamically using JS.',
+    'My-Exp is a personal expense tracker mobile app that allows users to:  create expense category, introduce new transactions associated with a category and see total expense as well as expense per each category. User should register and log in, so that the data is private to them.',
   },
   {
     id: 'project-4',
@@ -87,7 +87,7 @@ const projects = [
   {
     id: 'project-5',
     name: 'Portfolio website',
-    featuredImage: 'project-images/rsz_portfolio2.jpg',
+    featuredImage: 'project-images/rsz_portfolio2.png',
     sub: [
       'Microverse',
       '',
