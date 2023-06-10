@@ -103,7 +103,7 @@ const projects = [
     ],
 
     live_link: 'https://belmeetmule.github.io/My-Portfolio/',
-    source_link: 'https://belmeetmule.github.io/My-Portfolio/',
+    source_link: 'https://github.com/belmeetmule/My-Portfolio',
     description:
     'This project is a responsive mobile first Portfolio website. This website can be used by professionals like software developers to showcase and promote their work. Hence, one can use it to present his/her works, contact address, skill set and contact me form. It is built using java script and bootstrap.',
   },
