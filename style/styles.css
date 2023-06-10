@@ -313,12 +313,13 @@ header {
 
 .featuredImage-mobile {
   width: 100%;
-  height: auto;
+  height: 80%;
   border: 2px solid #bbb;
 }
 
 .featured_image-mobile {
   display: block !important;
+  border-radius: 10px;
 }
 
 .featured_image-desktop {
