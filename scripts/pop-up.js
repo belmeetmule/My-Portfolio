@@ -3,7 +3,7 @@ const projects = [
   {
     id: 'project-1',
     name: 'Homely',
-    featuredImage: '../project-images/Homely-new.png',
+    featuredImage: './project-images/Homely-new.png',
     sub: [
       'Microverse',
       '',
