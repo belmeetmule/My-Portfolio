@@ -437,6 +437,11 @@ header {
   margin-right: 5px;
 }
 
+.circle-image{
+  border-radius: 50%;
+  border: 0.3vw solid #ffffffe6;;
+}
+
 .skills{
   cursor: pointer;
 }
