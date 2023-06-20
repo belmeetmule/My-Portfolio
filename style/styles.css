@@ -37,7 +37,7 @@ header {
   margin-bottom: 0;
 }
 
-.logo {
+.logo{
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -45,6 +45,7 @@ header {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+  animation: flip 3s 1;
 }
 
 .menu {
@@ -163,6 +164,16 @@ header {
 
 #title{
   padding: 20px 0px;
+}
+
+@keyframes flip {
+  from {
+    transform: perspective(100px)
+  }
+  to {
+    transform: perspective(100px)
+     rotateX(360deg) 
+  }
 }
 
 @keyframes animateText {
