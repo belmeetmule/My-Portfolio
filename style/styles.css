@@ -103,7 +103,6 @@ header {
 /* header-background-mobile */
 .main {
   width: 100vw;
-  height: 100vh;
   border-bottom-left-radius: 80px 80px;
   /* background-image: url("../images/header-shapes-mobile.png"); */
   /* background-image: url("../images/bg-desktop-2.svg");  */
@@ -113,6 +112,7 @@ header {
   background-size: cover;
   background-color: white;
   background-position-y: 75px;
+  padding-bottom: 60px;
 }
 
 .two-column{
@@ -324,7 +324,7 @@ header {
 
 .featuredImage-mobile {
   width: 100%;
-  
+  height: 35vw;
   border: 2px solid #bbb;
 }
 
