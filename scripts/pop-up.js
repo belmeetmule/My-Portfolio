@@ -2,8 +2,29 @@
 const projects = [
   {
     id: 'project-1',
+    name: 'Homely',
+    featuredImage: './project-images/Homely-new.png',
+    sub: [
+      'Microverse',
+      '',
+      'Full-stack Dev',
+      '',
+      '2023',
+    ],
+    langs: [
+      'React',
+      'Ruby on Rails',
+      'PostgreSQL',
+    ],
+    live_link: 'https://homelyheaven.netlify.app/',
+    source_link: 'https://github.com/belmeetmule/homely-backend',
+    description:
+      'Homely is a web application that helps user to find and book visits to houses they want to buy or rent. Moreover, users can add houses they want to sell or rent, delete houses, book visits and see their bookings. It is built using react and RoR api',
+  },
+  {
+    id: 'project-2',
     name: 'Great Ethiopian Run',
-    featuredImage: './project-images/rsz_screen-shoot-desktop.jpg',
+    featuredImage: './project-images/rsz_screen-shoot-desktop.png',
     sub: [
       'Microverse',
       '',
@@ -22,28 +43,28 @@ const projects = [
       'A website project to promote the great ethiopian run that is going to be conducted on November 2022. The website has a nice look and feel on both small devices like phone and tablets and devices with large screens !!',
   },
   {
-    id: 'project-2',
-    name: 'Awesome Books',
-    featuredImage: './project-images/rsz_awesomebook.png',
+    id: 'project-3',
+    name: 'My-Expenses',
+    featuredImage: './project-images/my-expenses2.png',
     sub: [
       'Microverse',
       '',
-      'Front End Dev',
+      'Full-stack Dev',
       '',
-      '2022',
+      '2023',
     ],
     langs: [
-      'html',
+      'Rails',
       'css',
-      'javascript',
+      'PostgreSQL',
     ],
-    live_link: 'https://belmeetmule.github.io/awesome-book-es6/',
-    source_link: 'https://github.com/belmeetmule/awesome-book-es6',
+    live_link: 'https://my-expenses-3hoz.onrender.com/',
+    source_link: 'https://github.com/belmeetmule/My-Exp/tree/development',
     description:
-    'Awesome books project is built using java script, html and css. The app allows user to create and add new book detail into book list, display the list of added book and shows a simple about us information all generated dynamically using JS.',
+    'My-Exp is a personal expense tracker mobile app that allows users to:  create expense category, introduce new transactions associated with a category and see total expense as well as expense per each category. User should register and log in, so that the data is private to them.',
   },
   {
-    id: 'project-3',
+    id: 'project-4',
     name: 'To-Do-App',
     featuredImage: 'project-images/rsz_todo.png',
     sub: [
@@ -64,9 +85,9 @@ const projects = [
     'This is a to-do-list app project. The application allows user to add, edit, remove tasks in the to do list !! This app is built using java script, html and css.',
   },
   {
-    id: 'project-4',
+    id: 'project-5',
     name: 'Portfolio website',
-    featuredImage: 'project-images/rsz_portfolio2.jpg',
+    featuredImage: 'project-images/rsz_portfolio2.png',
     sub: [
       'Microverse',
       '',
@@ -82,7 +103,7 @@ const projects = [
     ],
 
     live_link: 'https://belmeetmule.github.io/My-Portfolio/',
-    source_link: 'https://belmeetmule.github.io/My-Portfolio/',
+    source_link: 'https://github.com/belmeetmule/My-Portfolio',
     description:
     'This project is a responsive mobile first Portfolio website. This website can be used by professionals like software developers to showcase and promote their work. Hence, one can use it to present his/her works, contact address, skill set and contact me form. It is built using java script and bootstrap.',
   },
@@ -218,10 +239,10 @@ const displayModal = (id) => {
 <h2 class="modal-card-title">${project.name}</h2>
 <ul class="icons">
     <li class="canopy">${project.sub[0]}</li>
-    <li class="counter"><span class='dot'> &#9679; <span>
+    <li class=""><span class='dot'> &#9679; <span>
     </li>
     <li class="bg">${project.sub[2]}</li>
-    <li class="counter">
+    <li class="">
       <span class='dot'> &#9679; <span>
     </li>
     <li class="bg">${project.sub[4]}</li>
@@ -240,7 +261,7 @@ const displayModal = (id) => {
         </ul>
         <hr>
         <div class="live-links">
-            <button class="btn-enabled" id='live-link' type="button">
+            <button class="btn-enabled " id='live-link' type="button">
                 <a href = "${project.live_link}" target = "_blank"> See live
                 <img src="./images/live-icon-new.png"> </a>
             </button>
@@ -249,7 +270,7 @@ const displayModal = (id) => {
                 See source
                 <img src="./images/source.png"> 
               </a>
-                </div>
+              
             </button>
         </div>
     </div>
