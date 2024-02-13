@@ -324,7 +324,7 @@ header {
 
 .featuredImage-mobile {
   width: 100%;
-  height: 80%;
+  
   border: 2px solid #bbb;
 }
 
@@ -342,7 +342,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 16px;
+  gap: 13px;
   margin: 10px auto;
   padding-left: 0;
 }
@@ -1036,6 +1036,10 @@ img.modal-card-img {
 
   .flex-item-left h1{
    padding-top: 10px;
+  }
+
+  .featuredImage-mobile {
+    height: 380px;
   }
 
 
